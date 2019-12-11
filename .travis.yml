@@ -15,4 +15,5 @@ deploy:
  password: $OPENSHIFT_PASSWD
  domain: $OPENSHIFT_PROJECT
  app: frontend
+ edge: true
 
