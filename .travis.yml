@@ -14,7 +14,6 @@ deploy:
  server: $OPENSHIFT_SERVER
  token: $OPENSHIFT_TOKEN
  project: $OPENSHIFT_PROJECT
- app: frontend
  on:
   branch: master
  edge: true
