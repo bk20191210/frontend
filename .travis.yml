@@ -9,3 +9,10 @@ before_install:
 script:
  - docker run -e CI=true bk20191210/frontend npm run test
 
+deploy:
+ provider: openshift
+ user: $OPENSHIFT_USER_ID
+ password: $OPENSHIFT_PASSWD
+ domain: $OPENSHIFT_PROJECT
+ app: frontend
+
