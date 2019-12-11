@@ -11,9 +11,9 @@ script:
 
 deploy:
  provider: openshift
- user: $OPENSHIFT_USER_ID
- password: $OPENSHIFT_PASSWD
- domain: $OPENSHIFT_PROJECT
+ server: $OPENSHIFT_SERVER
+ token: $OPENSHIFT_TOKEN
+ project: $OPENSHIFT_PROJECT
  app: frontend
  edge: true
 
