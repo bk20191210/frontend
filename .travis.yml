@@ -10,10 +10,10 @@ script:
  - docker run -e CI=true bk20191210/frontend npm run test
 
 deploy:
- provider: openshift
- server: $OPENSHIFT_SERVER
- token: $OPENSHIFT_TOKEN
- project: $OPENSHIFT_PROJECT
- app: frontend
- edge: true
+ - provider: openshift
+   server: $OPENSHIFT_SERVER
+   token: $OPENSHIFT_TOKEN
+   project: $OPENSHIFT_PROJECT
+   app: frontend
+   edge: true
 
